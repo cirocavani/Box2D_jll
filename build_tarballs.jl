@@ -7,7 +7,10 @@ version = v"2.4.1"
 
 # Collection of sources required to complete build
 sources = [
-    ArchiveSource("https://github.com/erincatto/box2d/archive/refs/tags/v$(version).tar.gz", "d6b4650ff897ee1ead27cf77a5933ea197cbeef6705638dd181adc2e816b23c2"),
+    ArchiveSource(
+        "https://github.com/erincatto/box2d/archive/refs/tags/v$(version).tar.gz",
+        "d6b4650ff897ee1ead27cf77a5933ea197cbeef6705638dd181adc2e816b23c2",
+    ),
 ]
 
 # Bash recipe for building across all platforms
@@ -58,5 +61,5 @@ build_tarballs(
     products,
     dependencies;
     julia_compat="1.6",
-    preferred_gcc_version = v"7",
+    preferred_gcc_version = v"9",
 )
