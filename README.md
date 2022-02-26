@@ -25,6 +25,6 @@ https://docs.binarybuilder.org/stable/
 rm -rf ~/.julia/dev/Box2D_jll
 rm -rf build products
 # julia --project build_tarballs.jl --verbose x86_64-apple-darwin
-# julia --project build_tarballs.jl --deploy=local --verbose x86_64-apple-darwin
-julia --project build_tarballs.jl --deploy=cirocavani/Box2D_jll.jl
+# julia --project build_tarballs.jl --deploy=cirocavani/Box2D_jll.jl
+julia --project build_tarballs.jl --deploy=local --verbose x86_64-apple-darwin
 ```
